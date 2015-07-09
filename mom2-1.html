@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Moment 2 - HTML-sida 1</title>
+</head>
+
+<header>
+    <h1>Kristoffer Freiholtz</h1>
+    <h2>Moment 2 - HTML-sida 1 - WebbutvecklingI - SO15</h2>
+    <a href="http://www.miun.se" title="Hitta din utbildning här">Miun</a>
+    <a href="#tips">Sista rubriken</a>
+
+</header>
+
+<body>
+    <h3>Fråga 1</h3>
+    <ul>
+        <li><p>HTML HyperText Markup Language är ett så kallat "markup language" som används för att skapa hemsidor.
+            Markup är ett format som har taggar och element som beskriver hur dokumentet skall se ut när det presenteras
+            för användare</p></li>
+        <li><p>XHTML Extensible HyperText Markup Language är ett striktare form av html som är lite hårdare med reglerna.
+            HTML går att komma undan med vissa misstag i formatering och ändå kan sidan visas korrekt. XHTML kräver
+            att man skriver formateringen korrekt för att sidan skall visas</p></li>
+        <li><p>HTML5 är HTML med fler tillgängliga element så man har mer alternativ när man skriver kod för en hemsida</p></li>
+        <li><a href="http://www.w3schools.com/html/html_intro.asp" title="Referens">Referens w3schools HTML</a></li>
+        <li><a href="http://www.w3schools.com/html/html_xhtml.asp" title="Referens">Referens w3schools XHTML</a></li>
+        <li><a href="http://www.w3schools.com/html/html5_intro.asp" title="Referens">Referens w3schools HTML5</a></li>
+    </ul>
+
+
+    <h3>Fråga 2</h3>
+    <ul>
+        <li><p>En tag är början eller slutet på ett element. Ett paragraf element består av öppningstagen <code>&lt;p&gt;</code>
+            och sedan någon text och sedan avslutningstaggen &lt;/p&gt; </p></li>
+        <li><a href="http://webdesign.about.com/od/beginningtutorials/f/what-is-html-tag-or-element.htm" title="Referens">
+            Referens webdesign.about.com</a></li>
+    </ul>
+
+    <h3>Fråga 3</h3>
+    <ul>
+        <li><p>p elementet är en text element där man skriver "vanlig brödtext". Detta stycke som du läser nu är ett paragraf element</p></li>
+        <li><p>html elementet är elementet som omger hela html dokumentet</p></li>
+        <li><p>body elementet är huvuddelen av sidan och där man lägger den mesta texten och innehållet. Det finns bara ett
+        body element i en hemsida</p></li>
+        <li><p>header elementet innehåller ofta navigering på sidan och t.ex. logotyp mm.</p></li>
+        <li><p>h1 - h6 elementen är olika former av rubriker ju lägre nummer desto större rubrik i allmänhet</p></li>
+
+        <li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" title="Referens">Referens mozilla.org</a></li>
+    </ul>
+
+    <h3>Fråga 4</h3>
+    <ul>
+        <li><p>Att inte avsluta ett element anses som ganska dålig kodningsstil. För det första så blir det svårare att läsa
+        html koden för det andra kan det ibland bli fel på grund av det. T.ex. så kan det bli svårare att implementera css och
+        javascript funktioner när inte det finns kompletta element. Den enda fördelen som jag hittat är att det ibland kan gå fortare
+        att hämta en hemsida av den enkla anledningen att det finns färre tecken i filen man laddar ner. Men med tanke på hur snabb
+        uppkoppling de flesta har nu förtiden så tycker jag personligen att det är dumt att inte använda avslutningstaggar.</p></li>
+
+        <li><p>Sedan finns det undantag. T.ex. ny rad taggen br som enbart är en tag när man vill bryta en rad och börja på nästa.</p></li>
+
+        <li><a href="http://webdesign.about.com/od/htmltags/qt/optional-html-end-tags-when-to-include-them.htm" title="Referens">
+            Referens webdesign.about.com</a></li>
+    </ul>
+
+    <h3>Fråga 5</h3>
+    <ul>
+        <li><p>Head innehåller metadata om dokumentet som titel och t.ex. CSS (Extra formatering för hemsidan som typsnitt
+            och färg mm)head innehåller metadata om dokumentet som titel och t.ex. CSS (Extra formatering för hemsidan som
+            typsnitt och färg mm)</p></li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" title="Referens">Referens mozilla.org</a></li>
+    </ul>
+
+    <h3>Fråga 6</h3>
+    <ul>
+        <li><p>Body är den största delen av en hemsida. Man kan säga huvuddelen att materialet som finns på en hemsida ligger
+            i body elementet. Som jag skrev tidigare kan det endast finnas ett body element per sida.</p></li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" title="Referens">Referens mozilla.org</a></li>
+    </ul>
+
+    <h3>Fråga 7</h3>
+    <ul>
+        <li><p>En absolut url pekar någonstans som man kan nå från vart som helst som man har uppkoppling. T.ex.
+            <a href="https://www.miun.se/utbildning/kurser/data-och-it/datateknik/datateknik-gr-a-webbutveckling-i-75-hp/om-kursen"
+               title="Referens">https://www.miun.se/utbildning/kurser/data-och-it/datateknik/datateknik-gr-a-webbutveckling-i-75-hp/om-kursen</a>
+            Däremot en relativ länk pekar på en sida/fil inom den aktuella hemsidan. Som när jag länkar till denna sidan
+            från min första sida så använder jag bara länken mom2-1.html. Det kan du ju inte bara klistra in
+            i en webbläsare var som helst. Det viktiga att tänka på är att en relativ länk kan brytas om man
+            t.ex inte får med alla filer. Har man en index.html och en kontakt.html måste man ha med båda i samma katalog
+            om man länkat dem relativt. Om man istället har en absolut länk så kan man alltid nå den så länge som den som
+            har hand om den absoluta resursen ser till att den finns tillgänglig.</p></li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" title="Referens">Referens mozilla.org</a></li>
+    </ul>
+
+    <h3>Fråga 8</h3>
+    <ul>
+        <li><p>Har man inte HTML5 stöd så kommer okända element sättas till display:inline. För att åtgärda detta kan man
+            sätta display:block på de påverkade elementen i css filen.</p></li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document"
+               title="Referens">Referens mozilla.org</a></li>
+    </ul>
+
+    <h3 id="#last">Fråga 9</h3>
+    <ul>
+        <li><p>Jag har börjat uppifrån med felen och skriver bara ut det första felet som jag åtgärdar i taget. Det i sin
+            tur tar ibland bort efteföljande fel som jag inte kommenterar</p></li>
+        <li><p>Error Line 3, Column 10: element "HTML5" undefined Skall vara html och inte html5</p></li>
+        <li><p>Error Line 4, Column 26: Element head is missing a required instance of child element title. Saknar title taggen i början</p></li>
+        <li><p>Warning No Character encoding declared at document level saknar meta charset="UTF-8" i head elementet</p></li>
+        <li><p>Error Line 13, Column 53: An img element must have an alt attribute Lägg till t.ex. alt="bild"</p></li>
+        <li><p>Error Line 21, Column 62: No space between attributes. lägg till det sista citattecknet alt="Bild 2"</p></li>
+        <li><p>Övriga kommentarer efter valideringen gick igenom:</p></li>
+        <li><p>Ett p element borde omgärda den första texten</p></li>
+        <li><p>En avslutande p tag fattas i den andra texten</p></li>
+        <li><p>Att lägga in en &nbsp; space mellan två br ser jag ingen vits med så jag har tagit bort den</p></li>
+        <li><p>br skall inte ha något / i taggen så de har jag tagit bort. Har även lagt dem på separata linjer för läsbarhet</p></li>
+        <li><p>Allmän formattering ordnad för ökad läsbarhet</p></li>
+        <li><p>Nedan är hur det såg ut när jag var klar.</p></li>
+
+        &lt;!DOCTYPE html&gt;<br>
+        <br>
+        &lt;head&gt;<br>
+        &emsp;&lt;meta charset="UTF-8"&gt;<br>
+        &emsp;&lt;title&gt;HTML5 - Validering&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        <br>
+        &lt;body&gt;<br>
+        &emsp;&lt;h1&gt;En testsida för validering av HTML5-dokument&lt;/h1&gt;<br>
+        &emsp;<br>
+        &emsp;&lt;p&gt;<br>
+        &emsp;Här nedanför finns en bild<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;img src="bild.jpg" alt="bild" width="300" height="150"&gt;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;/p&gt;<br>
+        &emsp;<br>
+        &emsp;&lt;p&gt;<br>
+        &emsp;Här finns en massa text som hör till samma stycke. För att skriva texten i ett stycke<br>
+        &emsp;använder man p-taggen (som betyder paragraph). Här nedanför finns en till bild<br>
+        &emsp;&lt;/p&gt;<br>
+        &emsp;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;img src="bild2.jpg" width="300" alt="Bild 2" height="150"&gt;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;<br>
+        &emsp;&lt;p&gt;&lt;a href="http://www.w3.org"&gt;World Wide Web Consortium (W3C)&lt;/a&gt;&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+        <br>
+        &lt;/html&gt;
+    </ul>
+
+</body>
+</html>
