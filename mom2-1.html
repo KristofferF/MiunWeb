@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Moment 2 - HTML-sida 1</title>
@@ -8,12 +9,21 @@
 <header>
     <h1>Kristoffer Freiholtz</h1>
     <h2>Moment 2 - HTML-sida 1 - WebbutvecklingI - SO15</h2>
-    <a href="http://www.miun.se" title="Hitta din utbildning här">Miun</a>
-    <a href="#tips">Sista rubriken</a>
-
+    <nav> <!--Navigation-->
+        <a href="index.html" title="Hem">Hem</a>
+        <a href="http://www.miun.se" title="Hitta din utbildning här">Miun</a>
+        <a href="#last">Sista rubriken</a>
+        <a href="mailto:kristoffer.freiholtz@hotmail.com">Skicka Mail</a>
+        <a href="mom2-2.html" title="TML-sida 2">HTML-sida 2</a>
+        <a href="http://computersweden.idg.se/" title="Computer sweden">
+            <img src="cs.png" alt="computer sweden" width="40" height="40">
+        </a>
+    </nav>
 </header>
 
 <body>
+
+    <!--Question 1 through 9-->
     <h3>Fråga 1</h3>
     <ul>
         <li><p>HTML HyperText Markup Language är ett så kallat "markup language" som används för att skapa hemsidor.
@@ -104,7 +114,9 @@
                title="Referens">Referens mozilla.org</a></li>
     </ul>
 
-    <h3 id="#last">Fråga 9</h3>
+
+    <a name="last"></a>
+    <h3>Fråga 9</h3>
     <ul>
         <li><p>Jag har börjat uppifrån med felen och skriver bara ut det första felet som jag åtgärdar i taget. Det i sin
             tur tar ibland bort efteföljande fel som jag inte kommenterar</p></li>
@@ -121,39 +133,43 @@
         <li><p>Allmän formattering ordnad för ökad läsbarhet</p></li>
         <li><p>Nedan är hur det såg ut när jag var klar.</p></li>
 
-        &lt;!DOCTYPE html&gt;<br>
-        <br>
-        &lt;head&gt;<br>
-        &emsp;&lt;meta charset="UTF-8"&gt;<br>
-        &emsp;&lt;title&gt;HTML5 - Validering&lt;/title&gt;<br>
-        &lt;/head&gt;<br>
-        <br>
-        &lt;body&gt;<br>
-        &emsp;&lt;h1&gt;En testsida för validering av HTML5-dokument&lt;/h1&gt;<br>
-        &emsp;<br>
-        &emsp;&lt;p&gt;<br>
-        &emsp;Här nedanför finns en bild<br>
-        &emsp;&lt;br&gt;<br>
-        &emsp;&lt;img src="bild.jpg" alt="bild" width="300" height="150"&gt;<br>
-        &emsp;&lt;br&gt;<br>
-        &emsp;&lt;br&gt;<br>
-        &emsp;&lt;/p&gt;<br>
-        &emsp;<br>
-        &emsp;&lt;p&gt;<br>
-        &emsp;Här finns en massa text som hör till samma stycke. För att skriva texten i ett stycke<br>
-        &emsp;använder man p-taggen (som betyder paragraph). Här nedanför finns en till bild<br>
-        &emsp;&lt;/p&gt;<br>
-        &emsp;<br>
-        &emsp;&lt;br&gt;<br>
-        &emsp;&lt;img src="bild2.jpg" width="300" alt="Bild 2" height="150"&gt;<br>
-        &emsp;&lt;br&gt;<br>
-        &emsp;&lt;br&gt;<br>
-        &emsp;<br>
-        &emsp;&lt;p&gt;&lt;a href="http://www.w3.org"&gt;World Wide Web Consortium (W3C)&lt;/a&gt;&lt;/p&gt;<br>
-        &lt;/body&gt;<br>
-        <br>
-        &lt;/html&gt;
+        <section> <!--Code example-->
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            <br>
+            &lt;head&gt;<br>
+            &emsp;&lt;meta charset="UTF-8"&gt;<br>
+            &emsp;&lt;title&gt;HTML5 - Validering&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            <br>
+            &lt;body&gt;<br>
+            &emsp;&lt;h1&gt;En testsida för validering av HTML5-dokument&lt;/h1&gt;<br>
+            &emsp;<br>
+            &emsp;&lt;p&gt;<br>
+            &emsp;Här nedanför finns en bild<br>
+            &emsp;&lt;br&gt;<br>
+            &emsp;&lt;img src="bild.jpg" alt="bild" width="300" height="150"&gt;<br>
+            &emsp;&lt;br&gt;<br>
+            &emsp;&lt;br&gt;<br>
+            &emsp;&lt;/p&gt;<br>
+            &emsp;<br>
+            &emsp;&lt;p&gt;<br>
+            &emsp;Här finns en massa text som hör till samma stycke. För att skriva texten i ett stycke<br>
+            &emsp;använder man p-taggen (som betyder paragraph). Här nedanför finns en till bild<br>
+            &emsp;&lt;/p&gt;<br>
+            &emsp;<br>
+            &emsp;&lt;br&gt;<br>
+            &emsp;&lt;img src="bild2.jpg" width="300" alt="Bild 2" height="150"&gt;<br>
+            &emsp;&lt;br&gt;<br>
+            &emsp;&lt;br&gt;<br>
+            &emsp;<br>
+            &emsp;&lt;p&gt;&lt;a href="http://www.w3.org"&gt;World Wide Web Consortium (W3C)&lt;/a&gt;&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            <br>
+            &lt;/html&gt;
+        </section>
     </ul>
+
 
 </body>
 </html>
