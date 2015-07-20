@@ -6,22 +6,21 @@
     <title>Moment 2 - HTML-sida 1</title>
 </head>
 
-<header>
-    <h1>Kristoffer Freiholtz</h1>
-    <h2>Moment 2 - HTML-sida 1 - WebbutvecklingI - SO15</h2>
-    <nav> <!--Navigation-->
-        <a href="index.html" title="Hem">Hem</a>
-        <a href="http://www.miun.se" title="Hitta din utbildning här">Miun</a>
-        <a href="#last">Sista rubriken</a>
-        <a href="mailto:kristoffer.freiholtz@hotmail.com">Skicka Mail</a>
-        <a href="mom2-2.html" title="TML-sida 2">HTML-sida 2</a>
-        <a href="http://computersweden.idg.se/" title="Computer sweden">
-            <img src="cs.png" alt="computer sweden" width="40" height="40">
-        </a>
-    </nav>
-</header>
-
 <body>
+    <header>
+        <h1>Kristoffer Freiholtz</h1>
+        <h2>Moment 2 - HTML-sida 1 - WebbutvecklingI - SO15</h2>
+        <nav> <!--Navigation-->
+            <a href="index.html" title="Hem">Hem</a>
+            <a href="http://www.miun.se" title="Hitta din utbildning här">Miun</a>
+            <a href="#last">Sista rubriken</a>
+            <a href="mailto:kristoffer.freiholtz@hotmail.com">Skicka Mail</a>
+            <a href="mom2-2.html" title="TML-sida 2">HTML-sida 2</a>
+            <a href="http://computersweden.idg.se/" title="Computer sweden" target="_blank">
+                <img src="cs.png" alt="computer sweden" width="40" height="40">
+            </a>
+        </nav>
+    </header>
 
     <!--Question 1 through 9-->
     <h3>Fråga 1</h3>
@@ -41,22 +40,26 @@
 
     <h3>Fråga 2</h3>
     <ul>
-        <li><p>En tag är början eller slutet på ett element. Ett paragraf element består av öppningstagen <code>&lt;p&gt;</code>
-            och sedan någon text och sedan avslutningstaggen &lt;/p&gt; </p></li>
+        <li><p>En <b>tag</b> är början eller slutet på ett element. Ett paragraf element består av öppningstagen <b><code>&lt;p&gt;</code></b>
+            och sedan någon text och sedan avslutningstaggen <b><code>&lt;/p&gt;</code></b></p></li>
         <li><a href="http://webdesign.about.com/od/beginningtutorials/f/what-is-html-tag-or-element.htm" title="Referens">
             Referens webdesign.about.com</a></li>
     </ul>
 
     <h3>Fråga 3</h3>
     <ul>
-        <li><p>p elementet är en text element där man skriver "vanlig brödtext". Detta stycke som du läser nu är ett paragraf element</p></li>
-        <li><p>html elementet är elementet som omger hela html dokumentet</p></li>
-        <li><p>body elementet är huvuddelen av sidan och där man lägger den mesta texten och innehållet. Det finns bara ett
-        body element i en hemsida</p></li>
-        <li><p>header elementet innehåller ofta navigering på sidan och t.ex. logotyp mm.</p></li>
-        <li><p>h1 - h6 elementen är olika former av rubriker ju lägre nummer desto större rubrik i allmänhet</p></li>
+        <li><p><b>nav</b> (navigation) Här kan man lämpligtvis stoppa in en meny med länkar till andra sidor eller sidor inom
+            sidan. Nav återfinns ofta i header taggen.</p></li>
+        <li><p><b>article</b> är en bit självständig text. Med självständig text menar man i detta fallet en text som skulle
+            kunna återfinnas på flera andra sidor. Det kan t.ex. vara ett foruminlägg, en informationstext om en
+            produkt eller ett matrecept.</p></li>
+        <li><p><b>aside</b> är för att tagga något som hör till en annan del av sidan men som inte ligger i fokus. T.ex.
+            vid en recension av en mobil så kan det vara en liten inofrmationsruta med information om batteritid,
+            antalet megapixlar på kameran samt en lista med fördelar och nackdelar för just denna mobil</p></li>
+        <li><p><b>header</b> elementet innehåller ofta navigering på sidan och t.ex. logotyp mm.</p></li>
+        <li><p><b>footer</b> är liknande header men är sidfoten och inte sidhuvudet</p></li>
 
-        <li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" title="Referens">Referens mozilla.org</a></li>
+        <li><a href="http://www.webbdesignguiden.se/html-5/#Nya_taggar_fr_struktur" title="Referens">Referens webbdesignguiden</a></li>
     </ul>
 
     <h3>Fråga 4</h3>
@@ -75,7 +78,7 @@
 
     <h3>Fråga 5</h3>
     <ul>
-        <li><p>Head innehåller metadata om dokumentet som titel och t.ex. CSS (Extra formatering för hemsidan som typsnitt
+        <li><p>Head innehåller <b>metadata om dokumentet</b> som titel och t.ex. CSS (Extra formatering för hemsidan som typsnitt
             och färg mm)head innehåller metadata om dokumentet som titel och t.ex. CSS (Extra formatering för hemsidan som
             typsnitt och färg mm)</p></li>
 
@@ -84,7 +87,7 @@
 
     <h3>Fråga 6</h3>
     <ul>
-        <li><p>Body är den största delen av en hemsida. Man kan säga huvuddelen att materialet som finns på en hemsida ligger
+        <li><p>Body är den <b>största delen av en hemsida</b>. Man kan säga huvuddelen att materialet som finns på en hemsida ligger
             i body elementet. Som jag skrev tidigare kan det endast finnas ett body element per sida.</p></li>
 
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" title="Referens">Referens mozilla.org</a></li>
@@ -114,9 +117,7 @@
                title="Referens">Referens mozilla.org</a></li>
     </ul>
 
-
-    <a name="last"></a>
-    <h3>Fråga 9</h3>
+    <h3 id="last">Fråga 9</h3>
     <ul>
         <li><p>Jag har börjat uppifrån med felen och skriver bara ut det första felet som jag åtgärdar i taget. Det i sin
             tur tar ibland bort efteföljande fel som jag inte kommenterar</p></li>
@@ -133,43 +134,43 @@
         <li><p>Allmän formattering ordnad för ökad läsbarhet</p></li>
         <li><p>Nedan är hur det såg ut när jag var klar.</p></li>
 
-        <section> <!--Code example-->
-            &lt;!DOCTYPE html&gt;<br>
-            &lt;html&gt;<br>
-            <br>
-            &lt;head&gt;<br>
-            &emsp;&lt;meta charset="UTF-8"&gt;<br>
-            &emsp;&lt;title&gt;HTML5 - Validering&lt;/title&gt;<br>
-            &lt;/head&gt;<br>
-            <br>
-            &lt;body&gt;<br>
-            &emsp;&lt;h1&gt;En testsida för validering av HTML5-dokument&lt;/h1&gt;<br>
-            &emsp;<br>
-            &emsp;&lt;p&gt;<br>
-            &emsp;Här nedanför finns en bild<br>
-            &emsp;&lt;br&gt;<br>
-            &emsp;&lt;img src="bild.jpg" alt="bild" width="300" height="150"&gt;<br>
-            &emsp;&lt;br&gt;<br>
-            &emsp;&lt;br&gt;<br>
-            &emsp;&lt;/p&gt;<br>
-            &emsp;<br>
-            &emsp;&lt;p&gt;<br>
-            &emsp;Här finns en massa text som hör till samma stycke. För att skriva texten i ett stycke<br>
-            &emsp;använder man p-taggen (som betyder paragraph). Här nedanför finns en till bild<br>
-            &emsp;&lt;/p&gt;<br>
-            &emsp;<br>
-            &emsp;&lt;br&gt;<br>
-            &emsp;&lt;img src="bild2.jpg" width="300" alt="Bild 2" height="150"&gt;<br>
-            &emsp;&lt;br&gt;<br>
-            &emsp;&lt;br&gt;<br>
-            &emsp;<br>
-            &emsp;&lt;p&gt;&lt;a href="http://www.w3.org"&gt;World Wide Web Consortium (W3C)&lt;/a&gt;&lt;/p&gt;<br>
-            &lt;/body&gt;<br>
-            <br>
-            &lt;/html&gt;
-        </section>
-    </ul>
 
+    </ul>
+    <code> <!--Code example-->
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        <br>
+        &lt;head&gt;<br>
+        &emsp;&lt;meta charset="UTF-8"&gt;<br>
+        &emsp;&lt;title&gt;HTML5 - Validering&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        <br>
+        &lt;body&gt;<br>
+        &emsp;&lt;h1&gt;En testsida för validering av HTML5-dokument&lt;/h1&gt;<br>
+        &emsp;<br>
+        &emsp;&lt;p&gt;<br>
+        &emsp;Här nedanför finns en bild<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;img src="bild.jpg" alt="bild" width="300" height="150"&gt;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;/p&gt;<br>
+        &emsp;<br>
+        &emsp;&lt;p&gt;<br>
+        &emsp;Här finns en massa text som hör till samma stycke. För att skriva texten i ett stycke<br>
+        &emsp;använder man p-taggen (som betyder paragraph). Här nedanför finns en till bild<br>
+        &emsp;&lt;/p&gt;<br>
+        &emsp;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;img src="bild2.jpg" width="300" alt="Bild 2" height="150"&gt;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;&lt;br&gt;<br>
+        &emsp;<br>
+        &emsp;&lt;p&gt;&lt;a href="http://www.w3.org"&gt;World Wide Web Consortium (W3C)&lt;/a&gt;&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+        <br>
+        &lt;/html&gt;
+    </code>
 
 </body>
 </html>
