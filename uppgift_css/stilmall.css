@@ -1,0 +1,130 @@
+/*Kristoffer Freiholtz DT057G - Webbutveckling I*/
+
+/********** GENERAL **********/
+html {
+    background-color: ghostwhite;
+}
+
+* {
+    font-family: Georgia, Verdana;
+}
+
+#sidbredd {
+    width: 80%;
+    /*background-color: lightsteelblue;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sidhuvud {
+    background-image: url("skyline.png");
+    height: 186px;
+}
+
+/********** ARTICLE 1 and 2 **********/
+#article1, #article2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#article1 p{
+    font-size: 1.3em;
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+}
+
+#article2 p{
+    font-size: 1.3em;
+}
+
+/********** SIDA3 IMAGES **********/
+#section1 p{
+    float: left;
+    font-style: italic;
+}
+
+#bild1{
+    width: 100%;
+}
+
+#bild2{
+    width: 80%;
+    float: left;
+    margin-right: 0.5em;
+}
+
+#bild3{
+    width: 80%;
+    float: right;
+    margin-left: 0.5em;
+}
+
+/********** HEADERS **********/
+h1 {
+    position: relative;
+    font-size: 2.5em;
+    top: 0.2em;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+/********** NAVIGATION **********/
+nav {
+    position: absolute;
+    top: 10.5em;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: white;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:visited {
+    color: silver;
+}
+
+/********** LINKS **********/
+a {
+    color: Navy;
+}
+
+a:hover {
+    text-decoration: none;
+    color: Navy;
+}
+
+a:visited {
+    color: dodgerblue;
+}
+
+/********** TABLE **********/
+table {
+    border-collapse: collapse;
+    background-color: lightsteelblue;
+}
+
+td, th {
+    border: 1px solid;
+    border-color: black;
+    font-size: 2em;
+    font-style: italic;
+    width: 5em;
+    height: 2em;
+    text-align: center;
+}
