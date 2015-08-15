@@ -8,6 +8,50 @@
         table {border-collapse: collapse}
         td, th{border: 1px solid #000}
     </style>
+
+    <script>
+        // The function named setVisibility() is responsible to take care of show and hide the shoopingbasket
+        function setVisibility(){
+
+            var txt = document.getElementById("txtruta");
+            if(document.getElementById('basketContent').style.display === 'block'){
+                document.getElementById('basketContent').style.display='none'
+            }
+            else{
+                document.getElementById('basketContent').style.display='block'
+            }
+        }
+
+        // The function named addListObject() is responsible to add a object to the shoppingbasket
+        function addListObject(){
+            var tmpElement = document.createElement('li');
+            var quantity = document.getElementById("quantity");
+            var content = quantity.value + " st ";
+            var product = document.getElementById("product");
+            content += product.value + ", ";
+            var colors = document.getElementsByName("color");
+            for(var i = 0; i < colors.length; i++){
+                if(colors[i].checked){
+                    tmpElement.style.color = colors[i].value;
+                    if(colors[i].value === "red"){
+                        content += "Färg: Röd";
+                    }else if (colors[i].value === "blue"){
+                        content += "Färg: Blå";
+                    }
+                    else{
+                        content += "Färg: Grön";
+                    }
+                }
+            }
+            var message = document.getElementById("message");
+            if(message.value != ""){
+                content += " - " + message.value;
+            }
+            tmpElement.innerHTML = "<li>" + content + "</li>";
+            document.getElementById("basketList").appendChild(tmpElement);
+        }
+    </script>
+
 </head>
 
 <body>
@@ -144,9 +188,9 @@
 
     <form>
         <b>Färg:</b>
-        <input type="radio" name="color" value="Grön">Grön
-        <input type="radio" name="color" value="red">red
-        <input type="radio" name="color" value="blue">blue
+        <input type="radio" name="color" value="green" checked="checked">Grön
+        <input type="radio" name="color" value="red">Röd
+        <input type="radio" name="color" value="blue">Blå
     </form>
     <br>
 
@@ -156,22 +200,33 @@
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5 Wolle">5</option>
+        <option value="5">5</option>
     </select>
     <br>
     <br>
 
-
     <label for="message"><b>Meddelande:</b></label>
     <br>
-    <textarea id="message" rows="5" cols="30">
-    </textarea>
+    <textarea id="message" rows="5" cols="30"></textarea>
     <br>
     <br>
 
     <form>
-        <input type="submit" value="Lägg i varukorg">
+        <input type="button" value="Lägg i varukorg" onclick="addListObject()"/>
     </form>
+
+    <div id="basket" style="background-color:lightsteelblue; width:30%;">
+        <h3>Varukorg</h3>
+        <div id="basketContent" style = "display:none">
+            <p>Följande varor finns i din varukorg:</p>
+            <ul id="basketList">
+                <!--Empty list where we add items to-->
+            </ul>
+        </div>
+        <form>
+            <input type="button" value="Dölj/Visa varukorg" onclick="setVisibility()"/>
+        </form>
+    </div>
 
 </body>
 </html>
