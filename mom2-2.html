@@ -8,6 +8,41 @@
         table {border-collapse: collapse}
         td, th{border: 1px solid #000}
     </style>
+
+    <script>
+        //
+        // The function named change() is responsible to take care of changing div and move given data between the two separate div areas
+        function setVisibility(){
+
+            var txt = document.getElementById("txtruta");
+            if(document.getElementById('basketContent').style.display === 'block'){
+                document.getElementById('basketContent').style.display='none'
+            }
+            else{
+                document.getElementById('basketContent').style.display='block'
+            }
+            document.getElementById("textmassa").innerHTML = txt.value;
+            document.getElementById("sida2").style.backgroundColor = col.value;
+
+            document.getElementById("sida1").style.display='none';
+            document.getElementById("sida2").style.display='block';
+        }
+
+        function addListObject(){
+            var product = document.getElementById("product");
+            var colors = document.getElementsByName('color');
+            var color;
+            for(var i = 0; i < colors.length; i++){
+                if(colors[i].checked){
+                    color = colors[i].value;
+                }
+            }
+            var tmpElement = document.createElement('li');
+            tmpElement.innerHTML = "<li>" + product.value + "</li>";
+            document.getElementById("basketList").appendChild(tmpElement);
+        }
+    </script>
+
 </head>
 
 <body>
@@ -145,8 +180,8 @@
     <form>
         <b>Färg:</b>
         <input type="radio" name="color" value="Grön">Grön
-        <input type="radio" name="color" value="red">red
-        <input type="radio" name="color" value="blue">blue
+        <input type="radio" name="color" value="Röd">Röd
+        <input type="radio" name="color" value="Blå">Blå
     </form>
     <br>
 
@@ -156,11 +191,10 @@
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5 Wolle">5</option>
+        <option value="5">5</option>
     </select>
     <br>
     <br>
-
 
     <label for="message"><b>Meddelande:</b></label>
     <br>
@@ -170,8 +204,22 @@
     <br>
 
     <form>
-        <input type="submit" value="Lägg i varukorg">
+        <!--<input type="submit" value="Lägg i varukorg" onclick="addListObject()"/>-->
+        <input type="button" value="Lägg i varukorg" onclick="addListObject()"/>
     </form>
+
+    <div id="basket">
+        <h3>Varukorg</h3>
+        <div id="basketContent" style = "display:none">
+            <p>Följande varor finns i din varukorg:</p>
+            <ul id="basketList">
+                <!--Empty list where we add items to-->
+            </ul>
+        </div>
+        <form>
+            <input type="button" value="Dölj/Visa varukorg" onclick="setVisibility()"/>
+        </form>
+    </div>
 
 </body>
 </html>

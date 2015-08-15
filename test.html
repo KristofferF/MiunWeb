@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Example Javascript CSS property change with DIV
+  Written by Mikael Hasselmalm
+-->
+<head>
+    <title>Example DIV switcher with CSS property change</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style type="text/css">
+        div { visibility:visible; position:relative; top:0; left:0; }
+        .bc { background-color: #00FF00; }
+        .noborder { border: 0px; }
+        a#blue { color: blue; }
+        a#red { color: red; }
+    </style>
+
+    <script>
+        //
+        // The function named change() is responsible to take care of changing div and move given data between the two separate div areas
+        function change(){
+            var col = document.getElementById('color');
+            var txt = document.getElementById("txtruta");
+
+            document.getElementById("textmassa").innerHTML = txt.value;
+            document.getElementById("sida2").style.backgroundColor = col.value;
+
+            document.getElementById("sida1").style.display='none';
+            document.getElementById("sida2").style.display='block';
+        }
+    </script>
+</head>
+
+<body onload="document.getElementById('sida2').style.display='none'">
+
+<div id="sida1">
+    <h2>Sida 1</h2>
+
+    <div>
+        <a id="red" href="http://www.w3c.org" onclick="window.open(this.href); return false;">Move to w3c.org</a>
+    </div>
+
+    <select id="color">
+        <option value="#FBEFEF">Gray</option>
+        <option value="#FFFF00">Yellow</option>
+        <option value="#8000FF">Blue</option>
+    </select>
+
+    <input type="text" id="txtruta" />
+    <input type="button" id="byt" name="byt" value="Byt Sida" onclick="change()" />
+</div>
+
+<div id="sida2">
+    <h2>Sida 2</h2>
+
+    <div>
+        <a id="blue" href="http://www.w3c.org" onclick="window.open(this.href); return false;">Move to w3c.org</a>
+    </div>
+    <span id="textmassa"></span>
+    <input type="button" name="byt" value="Byt Sida" onclick="document.getElementById('sida2').style.display='none'; document.getElementById('sida1').style.display='block'" />
+</div>
+
+</body>
+</html>
